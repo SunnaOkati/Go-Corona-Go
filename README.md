@@ -5,14 +5,14 @@ COMP 6780 - Web Development
 ### Contents:
 - Number of webpages: 12
 - Number of style Sheets: 9
-- Number of jScripts: 4
+- Number of JScript: 4
 
 ### Major Tasks:
 - Embedded a media content.
-- Emdedded a Map.
+- Embedded a Map.
 - Embedded a Geolocation predictor based on visitors IP address
-- Embedded a API based search engine to display data both numbercially and graphiaclly based on user request.
-- Embeded a form
+- Embedded a API based search engine to display data both numercially and graphically based on user request.
+- Embedded a form
 
 ### Description
 gocoronago.com is a simple website built to offer knowledge on preventive and safety measures against COVID-19, and simple analysis and information on the COVID-19 cases in a single place to all the fellow human beings. As an individual and sibling of a doctor, I am doing my part here helping my brother while he is fighting to save lives in India just like heroes.
