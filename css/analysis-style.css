@@ -1,0 +1,38 @@
+/*Ensures the contents in the boy are arranged horizontaly and well seperated.
+They contains border in chocolate color.*/
+.main-body{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    border-style: solid;
+    border-radius: 2%;
+    margin: 1%;
+    border-color: chocolate;
+}
+
+/*Ensures the children are aligned vertically*/
+.left-body, .right-body{
+    display: inline;
+    align-content: center;
+    margin: 1%;
+}
+/* Always set the map height explicitly to define the size of the div
+    * element that contains the map. */
+#map {
+    margin: 2%;
+    height: 500px;
+    width: 500px;
+}
+
+.location-info, .cases-info{
+    border-style: solid;
+    margin: 2%;
+    padding: 2%;
+}
+
+/*Formats the list style */
+.location-info-list, .cases-info-list{
+    list-style: none; 
+    text-align: left;
+    padding: 1%;
+}

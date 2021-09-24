@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Feedback form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../css/form-style.css">
+    </head>
+    <body>
+    <!--Navigation bar at the top with logo to its left and links to other pages in its right-->
+        <nav class="menu-bar">
+                <div class="nav-title">
+                    <h4>go Corona go</h4>
+                </div>
+                <ul class="nav-links">
+                        <li><a href="cases.html">COVID-19 cases</a></li>
+                        <li><a href="../index.html">About</a></li>
+                        <li class="dropdown"><a href="services.html">Services</a>
+                            <div class="dropdown-content">
+                                <a href="analysis.html">Analysis</a>
+                                <a href="measures.html">Symptoms and Preventive Measures</a>
+                                <a href="usefullinks.html">Useful Links</a>
+                            </div>
+                        </li>
+                        <li><a href="feedbackform.html">Feedback form</a></li>
+                </ul>
+            </nav>
+
+        <!--Displays the form with its contents and ensures action results in a mail to 
+                assigned mail address.-->
+        <div class="replyform">
+            <h1>Feedback Form</h1>
+            <form class='form' enctype="text/plain" 
+                action="mailto:u7004474@anu.edu.au" >
+                <h4>Shout out what you think!</h4>
+                <p>Please complete the form below to let me know what you think about my website. If you would like a response, please include your email address.</p>
+                
+                <!--Assigns a space-->
+                <div class="space"></div>
+                
+                <!--Creates a table and in a single row the question is in 1st column and its input space is in 2nd column.-->
+                <table class="tg">
+                        <tr>
+                          <td class="tg-col1">How informative are the safety measures?</td>
+
+                          <!--Creates 3 radio buttons and assings a value for each.-->
+                          <td class="tg-col2" >
+                              <label><input type="radio" name="rating" value="Bad">Bad</label>
+                              <label><input type="radio" name="rating" value="Average">Average</label>
+                              <label><input type="radio" name="rating" value="Good">Good</label>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="tg-col1">Do you have any queries that needs answers?</td>
+                          <td class="tg-col2"><input type="text" name="whichfavourite" size="100"></td>
+                        </tr>
+                        <tr>
+                          <td class="tg-col1">Is statistical information useful?</td>
+                          <td class="tg-col2"><input type="text" name="whyfavourite" size="100"></td>
+                        </tr>
+                        <tr>
+                          <td class="tg-col1">Please help us with your email</td>
+                          <td class="tg-col2"><input type="text" name="email" size="100"></td>
+                        </tr>
+                </table>
+                <div class="space">
+                </div>
+                <!--Block displays the buttons side-by-side.-->
+                <nav class="form-buttons">
+                    <input type="submit" value = "Submit">
+                    <input type="reset" value="Clear">
+                </nav>
+                
+                </form>
+        </div>
+              
+        <!--Footer with anchor tags to source log and sitemap.-->
+        <footer>
+            <div id="footer">
+            <ul>
+                <li><a href="sourcelog.html">Source Log</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a target='_blank' href='https://twitter.com/Worldometers'>
+                    <img src='../Images/twitter.png' alt='Tweet' /></a></li>
+                <li><a target='_blank' href='https://www.facebook.com/Worldometers.info'>
+                    <img src='../Images/facebook.png' alt='Facebook'/></a></li>
+            </ul>
+            </div>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,20 @@
+/*Spread the children of main body horizontaly*/
+.main-body{
+    display: flex;
+    margin: 1%;
+    justify-content: space-between;
+}
+
+.left-body, .right-body{
+    margin: 1%;
+}
+
+.left-body{
+    width: 100%;
+    padding: 5%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+#map-image{
+    width: 80%; 
+} 

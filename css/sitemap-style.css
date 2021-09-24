@@ -1,0 +1,40 @@
+/*Spreads the 4div inside this nav horizontally.*/
+.sitemap-nav{
+    display: flex;
+    width: 80%;
+    margin-left: 5%;
+}
+
+.sitemap-nav div{
+    width: 30%;
+}
+.sitemap-nav ul{
+    list-style: none;
+}
+.sitemap-nav li{
+    margin: 5%;
+}
+
+/*Formats the anchor tags in the entire page.*/
+.sitemap-nav li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+
+/*Adds margin to the bottom, to ensure that each element in div4
+is well seprated vertically. */
+.sitemap-div4 p{
+    margin-bottom: 5%;
+}
+
+/*As the previous formating of the anchor tags covers only the ones in list, 
+the ones not in the list are formatted here.*/
+.sitemap-div4 p a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Symptoms and preventive measures</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../css/measures-style.css">
+        <script src="../js/measures.js"></script> 
+    </head>
+    <body>
+    <!--Navigation bar at the top with logo to its left and links to other pages in its right-->
+        <nav class="menu-bar">
+            <div class="nav-title">
+                <h4>go Corona go</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="cases.html">COVID-19 cases</a></li>
+                <li><a href="../index.html">About</a></li>
+                <li class="dropdown"><a href="services.html">Services</a>
+                    <div class="dropdown-content">
+                        <a href="analysis.html">Analysis</a>
+                        <a href="measures.html">Symptoms and Preventive Measures</a>
+                        <a href="usefullinks.html">Useful Links</a>
+                    </div>
+                </li>
+                <li><a href="feedbackform.html">Feedback form</a></li>
+
+            </ul>
+        </nav>
+
+        <!--Build the main body as a nav-->
+        <nav class="main-body">
+            <h1 style="padding-bottom: 1%">Symptoms:</h1>
+
+            <!--This displays the texts and image related to symptoms-->
+            <div id="symptoms-div">
+                    <img src="../Images/symptoms.jpg" alt="Symptoms">
+
+                    People with COVID-19 have had a wide range of symptoms reported – ranging from mild symptoms to severe illness.
+                    These symptoms may appear 2-14 days after exposure to the virus:
+                    <ul style="padding: 1%">
+                        <li>Fever</li>
+                        <li>Cough</li>
+                        <li>Shortness of breath or difficulty breathing</li>
+                        <li>Chills</li>
+                        <li>Repeated shaking with chills</li>
+                        <li>Muscle pain</li>
+                        <li>Headache</li>
+                        <li>Sore throat</li>
+                        <li>New loss of taste or smell</li>
+                    </ul>
+
+                    Pre-existing illnesses that put patients at higher risk:
+                    <ul style="padding: 1%">
+                        <li>cardiovascular disease</li>
+                        <li>diabetes</li>
+                        <li>chronic respiratory disease</li>
+                        <li>hypertension</li>
+                    </ul>
+                    That said, some otherwise healthy people do seem to develop a severe form of pneumonia after being infected by the virus. 
+                    The reason for this is being investigated as we try to learn more about this new virus.
+                    The picture to the left educates us on the differences in symptoms between covid-19, cold and flu.
+                    <h5>Image source:
+                    <a href="https://twitter.com/evaccardiff/status/1242162818742452229/photo/1">Twitter</a>
+                    </h5>
+            </div>
+
+            <!-- This "clear" division is to keep content from wrapping up around the previous division -->   
+            <div id="clear-right">
+            </div>
+
+            <!--This displays the links for protection guides and an image gallery visualizing the guide lines-->
+            <h1 id = "preventive-measures" style="padding-top: 3%; padding-bottom: 1%">Preventive Measures:</h1>
+            <nav class="measures-row">
+                <div style="padding-right: 2%">
+                    ACT Government urges everyone to follow these four simple measures, inorder to protect oneself and others as well.
+                    <ul style="padding: 2%">
+                        <li><a href="https://www.covid19.act.gov.au/protecting-yourself-and-others/protect-yourself#Practising-good-hygiene">Practising good hygiene</a></li>
+                        <li><a href="https://www.covid19.act.gov.au/protecting-yourself-and-others/protect-yourself#Physical-social-distancing">Physicalsocialdistancing</a></li>
+                        <li><a href="https://www.covid19.act.gov.au/protecting-yourself-and-others/protect-yourself#Use-of-masks">Use of masks</a></li>
+                        <li><a href="https://www.covid19.act.gov.au/protecting-yourself-and-others/protect-yourself#Keeping-your-home-clean">Keeping your home clean</a></li>
+                    </ul>
+                    We are trying to visualize a few of those measures using an image gallery.
+                    <h5>Image source:
+                            <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/how-to-protect-yourself-and-others-from-coronavirus-covid-19">health.gov.au</a>
+                    </h5>
+
+                </div>
+                <!--This div called contianer contains
+                    =>slide - which displays current image.
+                    =>Caption - which explains the current image.
+                    => row - 5 column of images-->
+                <div class="container">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="../Images/handwash.png" style="width: 100%;" alt="Hand washing">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="../Images/cough.png" style="width:100%" alt="Closed Coughing">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="../Images/shakehands.png" style="width:100%" alt="Probhiting shakehands">
+                    </div>
+                        
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="../Images/hugh.png" style="width:100%" alt="Probhiting physical contact">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="../Images/socialdistancing.png" style="width:100%" alt="Maintaining socialdistancing">
+                    </div>
+                        
+                    <!--These are the anchor tags to move to previous and next image in the slideshow.-->
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    <!--This displays the caption of the image being displayed in the slide.-->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    
+                    <!--This displays all the images and allows user to select one at a time
+                            from those to present it in the slide.-->
+                    <div class="row">
+                        <div class="column">
+                        <img class="demo cursor" src="../Images/handwash.png" style="width:100%; " onclick="currentSlide(1)" alt="Wash your hands thoroughly with soap and water.">
+                        </div>
+                        <div class="column">
+                        <img class="demo cursor" src="../Images/cough.png" style="width:100%" onclick="currentSlide(2)" alt="Remeber to cough or sneeze into your arm or a tissue.">
+                        </div>
+                        <div class="column">
+                        <img class="demo cursor" src="../Images/shakehands.png" style="width:100%" onclick="currentSlide(3)" alt="Do not shake hands.">
+                        </div>
+                        <div class="column">
+                        <img class="demo cursor" src="../Images/hugh.png" style="width:100%" onclick="currentSlide(4)" alt="Do not exchange physical greetings.">
+                        </div>
+                        <div class="column">
+                        <img class="demo cursor" src="../Images/socialdistancing.png" style="width:100%" onclick="currentSlide(5)" alt="Stay atleast 1.5m away from others.">
+                        </div> 
+                    </div>
+                </div>
+
+                <!--Initiliazing the slide to first image.-->
+                <script>showSlides(1);</script>
+            </nav>
+
+            <!--This section displays the steps involved in a proper hand wash
+            as an image gallery.-->
+            <h1 id="handwash" style="padding-top: 3%">Proper Hand Wash:</h1>
+
+            <!--Divided total of 8 images into 2 rows with each displaying 4 images.-->
+            <nav class="handwash-row">
+                <div class="image-container">
+                    <img src="../Images/step1.jpg" alt="Step 1" style="width:100%;">
+                    <div class="content">
+                        <h2>Step 1:</h2>
+                        <p>Wet hands under running water.</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="../Images/step2.jpg" alt="Step 2" style="width:100%;">
+                    <div class="content">
+                        <h2>Step 2:</h2>
+                        <p>Apply soap and rub palms together to ensure complete coverage.</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                        <img src="../Images/step3.jpg" alt="Step 3" style="width:100%;">
+                        <div class="content">
+                            <h2>Step 3:</h2>
+                            <p>Spread the lather over the back of the hands.</p>
+                        </div>
+                </div>
+                <div class="image-container">
+                        <img src="../Images/step4.jpg" alt="Step 4" style="width:100%;">
+                        <div class="content">
+                            <h2>Step 4:</h2>
+                            <p>Make sure the soap gets inbetween the fingers.</p>
+                        </div>
+                </div>
+            </nav>
+
+            <nav class="handwash-row">
+                <div class="image-container">
+                        <img src="../Images/step5.jpg" alt="Step 5:" style="width:100%;">
+                        <div class="content">
+                            <h2>Step 5:</h2>
+                            <p>Grip the fingers on each hand.</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="../Images/step6.jpg" alt="Step 6" style="width:100%;">
+                        <div class="content">
+                            <h2>Step 6:</h2>
+                            <p>Pay particular attention to the thumbs.</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                            <img src="../Images/step7.jpg" alt="Step 7" style="width:100%;">
+                            <div class="content">
+                                <h2>Step 7:</h2>
+                                <p>Press finger tips into the palm of each hand.</p>
+                            </div>
+                    </div>
+                    <div class="image-container">
+                            <img src="../Images/step8.jpg" alt="Step 8" style="width:100%;">
+                            <div class="content">
+                                <h2>Step 8:</h2>
+                                <p>Dry thoroughly with a clean towel.</p>
+                            </div>
+                    </div>  
+            </nav>                    
+        </nav>
+
+        <!--Footer with anchor tags to source log and sitemap.-->
+        <footer>
+                <div id="footer">
+                <ul>
+                    <li><a href="sourcelog.html">Source Log</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a target='_blank' href='https://twitter.com/Worldometers'>
+                        <img src='../Images/twitter.png' alt='Tweet' /></a></li>
+                    <li><a target='_blank' href='https://www.facebook.com/Worldometers.info'>
+                        <img src='../Images/facebook.png' alt='Facebook'/></a></li>
+                </ul>
+                </div>
+        </footer>
+        
+    </body>
+</html>

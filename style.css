@@ -1,0 +1,213 @@
+
+/*Remove the basics*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1, h2{
+    margin: 2%; 
+    text-decoration: underline;
+}
+/*Header of all the pages*/
+.menu-bar{
+    display: flex; /* displays elements below it side by side */
+    align-items: center;
+    min-height: 8vh;
+    background-color: chocolate;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Styles the logo in the left of the header.*/
+.nav-title{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase; /*Transforms text to upper case.*/
+    letter-spacing: 5px;
+    font-size: 20px;
+    width: 60%;
+    padding-left: 2%
+}
+
+/*Styles the first para by displaying the contents horizontally*/
+.nav-exag{
+    display: flex; 
+    align-content: center; 
+    justify-content: space-around;
+}
+
+/*Ensures the size of the image beside the first para*/
+#nav-exag-img {
+    width: 512px; 
+    height: 512px;
+} 
+/*Spreads the anchor tags in the right side of the header horizontally*/
+.nav-links{
+    display: flex;
+    
+}
+
+/*Formats the anchor tags.*/
+.nav-links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none; /*removing decorations of the link*/
+    font-weight: bold;
+    font-size: 13px;
+    padding: 25px 25px;
+}
+
+/*Setting up hover actions.*/
+.nav-links a:hover, a:active{
+    color: black;
+}
+
+.nav-links li{
+    list-style: none; /*Removes the bullet points.*/ 
+}
+
+/*Styling the dropdown content for services in nav bar in header*/
+.dropdown-content {
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    background-color:white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+/*Determining action for hovering over Services*/
+.dropdown:hover{
+    opacity: 0.6;
+}
+.dropdown-content a {
+    color: black;
+    padding: 10% 10%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+/*Determining action for hovering over subsection in services*/
+
+.dropdown-content a:hover {background-color: #ffb889;}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Formats the footer of all webpages.*/
+#footer ul{
+    list-style-type: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:  chocolate;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+/*List items float to the right of the footer*/
+#footer li {
+    float:right;
+    padding: 1%;
+}
+
+/*Formats the anchor tags in the footer.*/
+#footer li a {
+    color:  rgb(226, 226, 226);
+    text-align: center;
+    text-decoration: none; /*removing decorations of the link*/
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#footer li a img{
+    width: 75%;
+}
+/*Setting up hover actions.*/
+#footer li a:hover{
+    color: black;
+}
+
+/*Styles for the entire webpage excluding header and footer.*/
+.passion{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding: 50px;
+    align-content: center;
+}
+
+/*Formats the top part of the index page, i.e, the list beside the graph.*/
+.exag{
+    list-style: none; 
+    font-family: 'Bitter', cursive; /*Assigning a different format to highlight*/
+    text-align: center;
+    padding: 50px;
+}
+
+/*Formats the blockquote which contains the mission statement*/
+.quote{
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+    margin: 10px 30px;
+    padding: 25px;
+    background: #e7bb8127; /*Assigns a color for the background.*/
+    border: 1px solid #e7bf8b; /*Assigns a color for the boundries of the block quote.*/
+}
+
+/*The block containing the youtube video is flattened horizontally*/
+.video-block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Formats the quote beside the video*/
+.video-quote{
+    font-family: 'Bitter', cursive;
+    padding: 20px;
+}
+
+/*First image floats to the left, so the rest of the contents go to right.*/
+#wash-gif img {
+    float: left;
+    margin-right: 10px; 
+  }
+
+
+  /*First image floats to the right, so the rest of the contents go to left.*/
+#numbers-gif img{
+    float: right;
+    margin-left: 20px;  
+}
+
+/*After assigning float to the previous elements, we have to use this. So that 
+rest go to opp direction. IN order to cut the flow, we use this.
+*/
+#clear-left {
+    clear: left;
+}
+
+#clear-right {
+    clear: right;
+}
+/*Displays under construction context*/
+#under-construction{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 90%;
+    margin-top: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    
+}
+
+
+.space{
+    padding: 20px  ;
+}

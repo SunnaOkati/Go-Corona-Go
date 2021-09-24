@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" >
+    <link rel="stylesheet" type="text/css" media="print" href="css/print.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navigation bar at the top with logo to its left and links to other pages in its right-->
+    <nav class="menu-bar">
+        <div class="nav-title">
+            <h4>go Corona go</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="pages/cases.html">COVID-19 cases</a></li>
+            <li><a href="index.html">About</a></li>
+            <li class="dropdown"><a href="pages/services.html">Services</a>
+                <div class="dropdown-content">
+                    <a href="pages/analysis.html">Analysis</a>
+                    <a href="pages/measures.html">Symptoms and Preventive Measures</a>
+                    <a href="pages/usefullinks.html">Useful Links</a>
+                </div>
+            </li> 
+            <li><a href="pages/feedbackform.html">Feedback form</a></li>
+        </ul>
+    </nav>
+
+    <!--This part talk about the theme of the website-->
+    <h1 id='about-the-theme'>About the theme</h1>
+    <div class="passion">
+
+        <!--Displays the top part which contains the heated statements and the graph-->
+        <nav class = 'nav-exag'>
+            <div >
+                <ul class='exag'>
+                    <li >1,197,405!!! Not a big deal.</li>
+                    <li>0.015% of the world population!!! Too less.</li>
+                    <li>Canberra has a population of 457,330 as of late 2019. You might be wondering what I am trying to implicit.</li>
+                </ul>
+                <p>
+                    1,197,405 is 260% of 457,300(ie., population of Canberra), which is the count of total number of confirmed COVID-19 cases recorded worldwide as of 4th April 2020.
+                    We can inference from the blue curve in the grpah that the spread of the virus is not under control in some parts of the world.
+                    This made me think what if everyone had an opportunity to know about COVID and its symptoms and safety measures prior. 60,000+ people lives could have been saved.
+                    Never so late, I am gonna educate my people through this site.
+                </p>
+            </div>
+
+            <!--Image is placed to the left of above text-->
+            <img id="nav-exag-img" src="Images/worldwide.png" alt="World wide spread">
+        </nav>
+
+        <!--Mission statment is boxed to highlight it.-->
+        <div class="blockquote">
+            <blockquote class="quote">
+                <p class="quote_text">
+                        gocoronago.com is a simple website offering knowledge on preventive and safety measures against COVID-19, 
+                        and simple analysis and information on the COVID-19 cases in a single place to all the fellow human beings.
+                        As an individual and sibling of a doctor, I am doing my part here helping my brother while he is fighting to save
+                        lives in India just like heroes.
+                </p>
+            </blockquote>
+        </div>
+
+        <!--Creating space between two divsions to make it look asthetic-->
+        <div class="space">
+        </div>
+        <div id="video"></div>
+        <!--This block has a saying and a video with it.-->
+        <nav class="video-block">
+            <!--First sentence is quoted followed by a paragraph-->
+            <div style="margin-right: 10px;">
+                <q class="video-quote">What difference is it gonna make, if I -a single individual- don't follow the measures!!</q> 
+                <p style="margin-right: 10px;">If you are one with such a thinking
+                        , then I would advise you to watch this beautiful video, in which the vlogger uses Machine Learning tools and predicts the outputs of different scenarios.   
+                </p>
+            </div>
+
+            <!--Embedded video from youtube-->
+            <div class="analysis-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gxAaO2rsdIs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+            </div>        
+        </nav>
+
+        <!--This section of the page talks about the goals of the website.-->
+        <h1 id="about-the-goal">About the goals</h1>
+
+        <!--Block contains a para and a gif floating to its left.-->
+        <div id="wash-gif">
+  
+                <img src="Images/wash_your_hands.gif" width="300" alt="Wash your hands">
+                   
+                <p style="align-content: center">
+                    Now coming to the details on what this website is trying to achieve, the main theme is to stop corona as the cure is yet to be found.
+                    This website educates the users on safety measures like a proper hand wash, social distancing...etc., with pictures and textual explanations.
+                    To people confusing flu with normal COVID-19, the website clarifies by clearly tabulating the differences in their symptoms.
+                </p>
+                  
+                <h6>Image source:
+                <a href="https://www.buzzfeed.com/adeonibada/ncuti-gatwa-eric-sex-education-wash-hands-netflix">Buzz feed</a>
+                </h6>
+                  
+        </div>
+
+        <!-- This "clear" division is to keep content from wrapping up around the previous division -->   
+        <div id="clear-left">
+        </div>
+
+        <!--Block contains a para and a gif floating to its  right-->
+        <div class ='space'></div>
+        <div id="numbers-gif">
+  
+                <img src="Images/talk_numbers.gif" width="300" alt="Talk numbers">
+                   
+                <p>
+                        It also assists the user visually by pointing the nearby hospitals on a map. For people who love graphs, the upcoming services are going to be a treat.
+                        The website provides information like the number of active cases and a  graph on the growth of cases in the country/province in which the user is residing.
+                </p>
+                  
+                <h6>Image source:
+                <a href="https://giphy.com/gifs/abcnetwork-numbers-sharktank-3ov9jLrN6z0NbZsGPK">Giphy</a>
+                </h6>
+                  
+        </div>
+        <!-- Again, this "clear" division is to keep content from wrapping up around the previous division -->  
+        <div id="clear-right">
+        </div>
+        <div class="space"></div>
+    </div>
+
+    <!--Footer with anchor tags to source log and sitemap.-->
+    <footer>
+            <div id="footer">
+              <ul>
+                <li><a href="pages/sourcelog.html">Source Log</a></li>
+                <li><a href="pages/sitemap.html">Site Map</a></li>
+                <li><a target='_blank' href='https://twitter.com/Worldometers'>
+                <img src='Images/twitter.png' alt='Tweet' /></a></li>
+                <li><a target='_blank' href='https://www.facebook.com/Worldometers.info'>
+                    <img src='Images/facebook.png' alt='Facebook'/></a></li>
+              </ul>
+            </div>
+    </footer>
+
+</body>
+</html>

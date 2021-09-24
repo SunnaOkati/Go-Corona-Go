@@ -1,0 +1,66 @@
+/*Applying padding to the outermost layout.*/
+.replyform{
+    padding: 2%;
+}
+
+/*Formating the form itself, by setting its border-width, height, style,
+color and radius.*/
+.form{
+    border-style: solid;
+    border-width: 3px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-color: rgb(210, 105, 30);
+    border-radius: 10px;
+    margin: 5%;
+    padding: 2%;
+    font-size: 20px;
+}
+
+/*Formatting the structure of the table.*/
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/*Formating each data element.*/
+.tg td{
+    font-family:Arial, sans-serif;
+    padding:11px 10px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:black;
+}
+
+/*Formating the questions (i.e., the contents in the first column
+of the table). */
+.tg .tg-col1{
+    background-color:#ffffff;
+    border-color:#ffffff;
+    vertical-align:top
+}
+
+/*Formating the input spaces(i.e., the contents in the second column
+of the table*/
+.tg .tg-col2{
+    background-color:#ffffff;
+    border-color:#ffffff;
+    text-align:left;
+    vertical-align:top
+}
+
+/* Stretching the list of buttons horizontally, so that they look like
+they are beside one another. */
+.form-buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+/*Formating the buttons itself.*/
+.form-buttons input{
+    font-size: 15px;
+    width: 10%;
+}

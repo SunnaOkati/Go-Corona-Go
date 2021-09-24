@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Go Corona Go</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../css/usefullinks-style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!--I had to use this inorder to make it responsive -->
+        <script src="../js/imageMapResizer.min.js"></script>
+        <script src="../js/usefullinks.js"></script>
+    </head>
+    <body>
+    <!--Navigation bar at the top with logo to its left and links to other pages in its right-->
+        <nav class="menu-bar">
+            <div class="nav-title">
+                <h4>go Corona go</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="cases.html">COVID-19 cases</a></li>
+                <li><a href="../index.html">About</a></li>
+                <li class="dropdown"><a href="services.html">Services</a>
+                    <div class="dropdown-content">
+                        <a href="analysis.html">Analysis</a>
+                        <a href="measures.html">Symptoms and Preventive Measures</a>
+                        <a href="usefullinks.html">Useful Links</a>
+                    </div>
+                </li>
+                <li><a href="feedbackform.html">Feedback form</a></li>
+
+            </ul>
+        </nav>
+
+        <!--Builds a nav for the main body-->
+        <nav class="main-body">
+
+            <!--Left body with only textual data-->
+            <nav class="left-body">
+                <h2 >Useful Links:</h2>
+                <p style="margin-top: 2%">
+                    Each and every state has its own COVID-19 website maintained by its government.
+                    Through these websites, governments are spreading information and awarness on the current situation.
+                    A state has its own loackdown state and from these website you can enrich your knowledge on do(s) and dont(s) on that particular state.
+                    We as a community should stand united to flatten the growth cure. United with social distancing, obviously.
+                    This page is a shortcut to all the COVID-19 websites hosted by state governments in Australia. 
+                    In-order to access them, hover over the state's name in the beside map. Once you see a information window with the name of the state on it, click.
+                </p>
+            </nav>
+
+            <!--Builds Right side of the body which contains the image map-->
+            <!--Areas chosen are rectangles and they are attached with ref to gov webpages.-->
+            <nav class="right-body">
+                <img src="../Images/map.png" id="map-image" alt="" usemap="#map" />
+                <map name="map">
+                        <area shape="rect" coords="1094,1243,1292,1427" alt="Tasmania" href="https://coronavirus.tas.gov.au/" target="_blank" title="Tasmania" />
+                        <area shape="rect" coords="1296,1059,1335,1110" alt="ACT" href="https://www.covid19.act.gov.au/" target="_blank" title="Canberra" />
+                        <area shape="rect" coords="1028,1086,1286,1226" alt= "Victoria" href="https://www.dhhs.vic.gov.au/coronavirus" target="_blank" title="Victoria" />
+                        <area shape="rect" coords="1102,805,1517,1088" alt="New South Wales" href="https://www.nsw.gov.au/covid-19" target="_blank" title="New South Wales" />
+                        <area shape="rect" coords="639,665,996,1179" alt="Soth Australia" href="https://www.covid-19.sa.gov.au/" title="South Australia" />
+                        <area shape="rect" coords="976,-3,1497,772" alt="Queensland" href="https://www.covid19.qld.gov.au/" target="_blank" title="Queensland" />
+                        <area shape="rect" coords="627,3,937,646" alt="Northern Territory" href="https://coronavirus.nt.gov.au/" target="_blank" title="Northern Territory" />
+                        <area shape="rect" coords="13,126,579,1088" alt="Western Australia" href="https://www.wa.gov.au/government/covid-19-coronavirus" target="_blank" title="Western Australia" />
+                </map>
+            </nav>
+        </nav>
+
+        <!--Footer with anchor tags to source log and sitemap.-->
+        <footer>
+                <div id="footer">
+                <ul>
+                    <li><a href="sourcelog.html">Source Log</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a target='_blank' href='https://twitter.com/Worldometers'>
+                        <img src='../Images/twitter.png' alt='Tweet' /></a></li>
+                    <li><a target='_blank' href='https://www.facebook.com/Worldometers.info'>
+                        <img src='../Images/facebook.png' alt='Facebook'/></a></li>
+                </ul>
+                </div>
+        </footer>
+        
+    </body>
+</html>

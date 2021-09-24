@@ -1,0 +1,85 @@
+/*set the background color to white and set the type to black*/
+body {
+ background-color: white;
+ color: black;
+ font-family: Times, "Times New Roman", Garamond, serif;
+}
+
+/*Hides all the less important contemt*/
+.nav-links,  .video-block, #footer{
+ display: none;
+} 
+
+/*Styles go corona*/
+h4 {
+ color: white;
+ background-color: black;
+ font-size: 24pt;
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ padding: 7pt;
+ text-transform: uppercase;
+}
+
+h1 {
+ padding: 0;
+ margin: 0;
+ font-size: 20pt;
+ border-bottom: 1px solid black;
+ 
+}
+
+/*Styles about the theme half of the page*/
+.nav-exag{
+    display: flex;
+}
+
+img{
+    margin: 1%;
+}
+.nav-exag img{
+    width: 50%;
+}
+/*Displays the href in the place of anchor tag*/
+a:after {
+    content: " <" 
+    attr(href) "> ";
+    font-family: courier, monospace;
+    font-weight: normal;
+   }
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #626466;
+} 
+
+/*First image floats to the left, so the rest of the contents go to right.*/
+#wash-gif img {
+    float: left;
+    margin-right: 10px; 
+  }
+
+
+  /*First image floats to the right, so the rest of the contents go to left.*/
+#numbers-gif img{
+    float: right;
+    margin-left: 20px;  
+}
+
+/*After assigning float to the previous elements, we have to use this. So that 
+rest go to opp direction. IN order to cut the flow, we use this.
+*/
+#clear-left {
+    clear: left;
+}
+
+#clear-right {
+    clear: right;
+}
+
+/*Formats the blockquote which contains the mission statement*/
+.quote{
+    padding-left: 1%;
+    background: #e7bb8127; /*Assigns a color for the background.*/
+    border: 1px solid #e7bf8b; /*Assigns a color for the boundries of the block quote.*/
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Go Corona Go</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../css/analysis-style.css">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChrtMJGjvKuvKbA110I95MJLVM7ZgF1cA&libraries=places&callback=initMap">
+        </script>
+        <script src="../js/analysis.js"></script>
+            
+    </head>
+    <body>
+    <!--Navigation bar at the top with logo to its left and links to other pages in its right-->
+        <nav class="menu-bar">
+            <div class="nav-title">
+                <h4>go Corona go</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="cases.html">COVID-19 cases</a></li>
+                <li><a href="../index.html">About</a></li>
+                <li class="dropdown"><a href="services.html">Services</a>
+                    <div class="dropdown-content">
+                        <a href="analysis.html">Analysis</a>
+                        <a href="measures.html">Symptoms and Preventive Measures</a>
+                        <a href="usefullinks.html">Useful Links</a>
+                    </div>
+                </li>    
+                <li><a href="feedbackform.html">Feedback form</a></li>
+
+            </ul>
+        </nav>
+
+        <!--Builds a nav that contains the entire body-->
+        <nav class = "main-body">
+
+            <!--Builds a nav that is to the left and contains locations and cases info.-->
+                <nav class = "left-body">
+                    <h2 id='current-location'>Current Location:</h2>
+
+                    <!--This displays the geographic informations of the user-->
+                    <!-- List elements gets updated from the js-->
+                    <div class="location-info">
+                        <ul class='location-info-list'>
+                            <li id="location-country"></li>
+                            <li id="location-state"></li>
+                            <li id="location-address"></li>
+                        </ul>
+                    </div>
+                    <p style="margin-bottom: 10%; font-style: italic">*information displayed are based on latitude and longitude of your current location.</p>
+                    <h2 id="cases">COVID-19 cases:</h2>
+
+                    <!--This displays information related to COVID19 cases.-->
+                    <!-- List elements gets updated from the js.-->
+                    <div class="cases-info">
+                        <ul class='cases-info-list'>
+                            <li id="cases-confirmed"></li>
+                            <li id="cases-recovered"></li>
+                            <li id="cases-deaths"></li>
+                        </ul>
+                    </div>
+                    <p style="font-style: italic">*information displayed are based on which country your current location belongs to.</p>
+                </nav>
+
+                <!--Contains the map which displays the current location and nearby hospitals with markers.-->
+                <nav class="right-body">
+                    <h2>Nearby hospitals:</h2>
+                    <div id="map"></div>
+                </nav>
+        </nav>
+        
+        <!--Footer with anchor tags to source log and sitemap.-->
+        <footer>
+            <div id="footer">
+            <ul>
+                <li><a href="sourcelog.html">Source Log</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a target='_blank' href='https://twitter.com/Worldometers'>
+                    <img src='../Images/twitter.png' alt='Tweet' /></a></li>
+                <li><a target='_blank' href='https://www.facebook.com/Worldometers.info'>
+                    <img src='../Images/facebook.png' alt='Facebook'/></a></li>
+            </ul>
+            </div>
+        </footer>
+    
+    </body>
+</html>

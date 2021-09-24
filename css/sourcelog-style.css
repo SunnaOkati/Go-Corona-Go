@@ -1,0 +1,53 @@
+/*Formats the table*/
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0; 
+    margin-bottom: 5%;
+    margin-top: 1%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+/*Formats each data row of the table*/
+.tg td{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    padding:10px 10px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:black;
+}
+
+/*Formats heading of each column.*/
+.tg th{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    padding:10px 10px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:black;
+}
+
+/*Formats each data element in the first row*/
+.tg .tg-hrow{
+    font-weight:bold;
+    font-size:20px;
+    border-color: coral;
+    text-align:center;
+    vertical-align:top;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+/*Formats each data element in the below rows*/
+.tg .tg-drow{
+    font-size:20px;
+    border-color:inherit;
+    text-align:center;
+    vertical-align:top
+}
